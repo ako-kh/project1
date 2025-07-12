@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <section class="px-4 mb-4">
+        <div class="container-fluid color_bg_gray rounded-4 p-5">
+            <p class="gloock h4">Our Story</p>
+            <h1 class="gloock some-h1 fw-bold">Discover Our Haven</h1>
+        </div>
+    </section>
+
+    <section class="px-4">
+        <video class="z-0 rounded-4 position-absolute w-100" src="{{ url_for('static', filename='images/reading.mp4')}}" autoplay muted
+            loop id=bgvideo></video>
+        
+        <!-- <div class="z-1 bg-warning position-relative start-50 p-5">
+
+        </div>    
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 bg-warning p-5"></div>
+            </div>
+        </div> -->
+    </section>
+
+{% endblock %}

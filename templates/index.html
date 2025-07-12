@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <div class="text-center mt-5 mb-5">
+        <p class="fw-light h5">The Most Rare Books Online</p>
+        <h1 class="gloock fw-bold some-h1">Immerse Yourself in <br>Literary Beauty</h1>
+    </div>
+
+    <section class="container-fluid my-5 p-4">
+        <div class="row gy-lg-0 gy-4">
+            <div class="col-lg-8 col-12">
+                 <video class="rounded-4 w-100" src="{{ url_for('static', filename='images/reading1.mp4')}}" autoplay muted loop></video>
+            </div>
+            <div class="col-lg-4 col-12">
+                 <div class="color_bg_gray p-5 rounded-4 w-100 h-100 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Shop books</button>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center mt-5 mb-5">
+        <p class="gloock fw-light h5">Best Sellers</p>
+        <h1 class="gloock fw-bold some-h1">Discover the most<br> sought-after books</h1>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-4 col-12">
+                        <div class="center text-center wrap">
+                            <img class="rounded-4 mb-2" src="{{ url_for('static', filename='images/beyond_the_fog.jpg')}}" alt="beyond the fog">
+                            <div class="card-body">
+                                <p class="gloock h3 m-0">Beyond the fog</p>
+                                <p class="m">___</p>
+                                <p class="h5 fw-lighter">85$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="center text-center">
+                            <img class="rounded-4 mb-2" src="{{ url_for('static', filename='images/final_countdown.jpg')}}" alt="Final countdown">
+                            <div class="card-body">
+                                <p class="gloock h3 m-0">Final countdown</p>
+                                <p class="m">___</p>
+                                <p class="h5 fw-lighter">85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item container-fluid">
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-4 col-12">
+                        <div class="center text-center">
+                            <img class="rounded-4 mb-2" src="{{ url_for('static', filename='images/diannas_vision.jpg')}}" alt="Dianna's vision">
+                            <div class="card-body">
+                                <p class="gloock h3 m-0">Dianna's vision</p>
+                                <p class="m">___</p>
+                                <p class="h5 fw-lighter">90$</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="center text-center">
+                            <img class="rounded-4 mb-2" src="{{ url_for('static', filename='images/the_real_story.jpg')}}" alt="The real story">
+                            <div class="card-body">
+                                <p class="gloock h3 m-0">The real story</p>
+                                <p class="m">___</p>
+                                <p class="h5 fw-lighter">85$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="color_bg_gray p-4 my-5">
+        <div class="container-fluid bg-light rounded-4 p-5">
+            <p class="gloock h4">Special Features</p>
+            <h1 class="gloock some-h1 fw-bold">Unique <br> Offerings for <br> Bookers</h1>
+        </div>
+
+        <div class="container-fluid my-5">
+            <div class="row mb-lg-5 mb-0">
+                <div class="col-lg-2 col-12">
+                    <div class="bg-light rounded-4 custom-div">
+                        <img src="{{ url_for('static', filename='images/books.svg') }}" alt="books" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="h3 gloock my-3 my-lg-5">Book Signing Events</p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="mt-2 mb-5 my-lg-5">Join our exclusive book signing events and meet your favorite authors.</p>
+                </div>
+            </div>
+
+            <div class="row mb-lg-5 mb-0">
+                <div class="col-lg-2 col-12">
+                    <div class="bg-light rounded-4 custom-div">
+                        <img src="{{ url_for('static', filename='images/books1.svg') }}" alt="books" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="h3 gloock my-3 my-lg-5">Book Signing Events</p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="mt-2 mb-5 my-lg-5">Join our exclusive book signing events and meet your favorite authors.</p>
+                </div>
+            </div>
+
+            <div class="row mb-lg-5 mb-0">
+                <div class="col-lg-2 col-12">
+                    <div class="bg-light rounded-4 custom-div">
+                        <img src="{{ url_for('static', filename='images/books2.svg') }}" alt="books" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="h3 gloock my-3 my-lg-5">Book Signing Events</p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="mt-2 mb-5 my-lg-5">Join our exclusive book signing events and meet your favorite authors.</p>
+                </div>
+            </div>
+
+            <div class="row mb-lg-5 mb-0">
+                <div class="col-lg-2 col-12">
+                    <div class="bg-light rounded-4 custom-div">
+                        <img src="{{ url_for('static', filename='images/books3.svg') }}" alt="books" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="h3 gloock my-3 my-lg-5">Book Signing Events</p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <p class="mt-2 mb-5 my-lg-5">Join our exclusive book signing events and meet your favorite authors.</p>
+                </div>
+            </div>
+
+            <div class="row mb-lg-5 mb-0 justify-content-center">
+                <div class="col-auto">
+                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Discover more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

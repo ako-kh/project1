@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <section class="px-4">
+        <div class="container-fluid color_bg_gray rounded-4 p-5">
+            <p class="gloock h4">Operating Hours</p>
+            <h1 class="gloock some-h1 fw-bold pb-5">Visit Us</h1>
+        </div>
+    </section>
+
+    <sectio class="container-fluid">
+        <div class="row px-4 gy-lg-0 gy-4">
+            <div class="col-lg-6 col-12">
+                <img class="rounded-4 w-100" src="{{ url_for('static', filename='images/handbook.png')}}">
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="color_bg_broun rounded-4 h-100 p-5">
+                    <p class="fw-light h5 mt-5 text-light">Weekday Hours</p>
+                    <h1 class="gloock h1 text-light">Mon-Fri:</h1>
+                    <h1 class="gloock h1 pb-5 text-light mb-5">9:00 AM - 7:00 PM</h1>
+                    
+                    <p class="fw-light h5 text-light">Weekend Hours</p>
+                    <h1 class="gloock h1 text-light">Sat-Sun:</h1>
+                    <h1 class="gloock h1 pb-5 text-light">10:00 AM - 5:00 PM</h1>
+                </div>
+                <!-- <div class="container-fluid p-5 rounded-4 bg-warning h-100 py-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="gloock h5">Weekday Hours</p>
+                            <h1 class="gloock h1 fw-bold">Mon-Fri:</h1>
+                            <h1 class="gloock h1 fw-bold pb-5">9:00 AM - 7:00 PM</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="gloock h5">Weekend Hours</p>
+                            <h1 class="gloock h1 fw-bold">Sat-Sun:</h1>
+                            <h1 class="gloock h1 fw-bold pb-5">10:00 AM - 5:00 PM</h1>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4">
+        <div class="container-fluid color_bg_gray rounded-4 p-5">
+            <p class="gloock h4">Let's talk</p>
+            <h1 class="gloock some-h1 fw-bold pb-5">Contact us</h1>
+            </div>
+    </section>
+    
+    <section class="container-fluid px-4">
+        <div class="row"> 
+            <div class="col-lg-6 col-12 ">
+                <div class="color_bg_pink h-100 rounded-4">
+                    <form action="" class="form-style">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center"> 
+                                <div class="col-lg-4 col-8">
+                                    <p class="mb-0">Name</p>
+                                    <input class="p-2 mb-4" name="name" id="name" type="text" autocomplete="off" required >
+                                </div>
+                                <div class="col-lg-4 col-8">
+                                    <p class="mb-0">Last name</p>
+                                    <input class="p-2 mb-4" name="last_name" id="last_name" type="text" autocomplete="off" required >
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-8">
+                                    <p class="mb-0">Email</p>
+                                    <input class="p-2 mb-4" name="email" id="email" type="email" autocomplete="off" required >
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-8">
+                                    <p class="mb-0">Message</p>
+                                    <textarea class="p-2 mb-4" name="message" id="message" type="text" autocomplete="off" required rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-8">
+                                    <button class="btn btn-warning rounded-5 px-5 border-0 w-100" type="button">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="color_bg_broun rounded-4 h-100 p-5">
+                    <p class="fw-light h5 mt-5 text-light">Our Location</p>
+                    <h1 class="gloock h1 pb-5 text-light mb-5">500 Terry Francine St. San Francisco, CA 94158</h1>
+                    
+                    <p class="fw-light h5 text-light">Email</p>
+                    <h1 class="gloock h1 pb-5 text-light">info@mysite.com</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
