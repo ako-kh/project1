@@ -12,15 +12,15 @@
     <header>
     <nav class="navbar navbar-expand-lg rounded-4 m-4">
         <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="{{ url_for('index')}}">C. Balthazar</a>
+            <a class="gloock navbar-brand ms-4" href="{{ url_for('index')}}">C. Balthazar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse collapse-style ps-4 rounded-4" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="{{ url_for('shop')}}">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('about_us')}}">About us</a>
@@ -28,8 +28,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact')}}">Contact</a>
                     </li>
-                    <li class="nav-item ms-5">
-                        <button class="btn" type="button">
+                    <li class="nav-item ms-lg-5">
+                        <button class="btn ps-0" type="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle"
                                 viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -39,13 +39,14 @@
                             Log in
                         </button>
                     </li>
-                    <li class="nav-item">
-                        <button class="btn">
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn ps-0" type="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
                             </svg>
+                            <span class="d-lg-none">Cart</span>
                         </button>
                     </li>
                 </ul>
@@ -66,8 +67,7 @@
                     <div class="col-md-4 col-12 gy-3 gy-md-0">
                         <div class="info">
                             <p class="text-light">
-                                123-456-7890
-                                info@mysite.com
+                                123-456-7890 <br>info@mysite.com
                             </p>
                         </div>
                         <div class="info">
@@ -79,16 +79,16 @@
                     <div class="col-md-4 col-12 gy-3 gy-md-0">
                         <div class="info">
                             <p class="text-light">
-                                Privacy Policy
-                                Accessibility Statement
-                                Shipping Policy
-                                Terms & Conditions
-                                Refund Policy
+                                Privacy Policy <br>
+                                Accessibility Statement <br>
+                                Shipping Policy <br>
+                                Terms & Conditions <br>
+                                Refund Policy <br>
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4 col-12 gy-3 gy-md-0">
-                        <div>
+                        <div class="d-flex gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-facebook text-light" viewBox="0 0 16 16">
                                 <path

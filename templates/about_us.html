@@ -3,22 +3,46 @@
 
     <section class="px-4 mb-4">
         <div class="container-fluid color_bg_gray rounded-4 p-5">
-            <p class="gloock h4">Our Story</p>
-            <h1 class="gloock some-h1 fw-bold">Discover Our Haven</h1>
+            <p class="f-color gloock h4">Our Story</p>
+            <h1 class="f-color gloock some-h1 fw-bold">Discover Our Haven</h1>
         </div>
     </section>
 
     <section class="px-4">
-        <video class="z-0 rounded-4 position-absolute w-100" src="{{ url_for('static', filename='images/reading.mp4')}}" autoplay muted
-            loop id=bgvideo></video>
+        <div class="position-relative">
+            <video class="z-0 rounded-4 w-100" src="{{ url_for('static', filename='images/reading.mp4')}}" autoplay muted loop
+                id=bgvideo></video>
         
-        <!-- <div class="z-1 bg-warning position-relative start-50 p-5">
+            <div class="z-1 container position-absolute start-0 top-0 p-5">
+                <div class="bg-light p-5 rounded-4">
+                    <p class="f-color gloock h4">Our Mission</p>
+                    <h1 class="f-color gloock fw-bold mb-5">Inspiring <br> Book <br> Lovers</h1>
+                    <p class="f-color mt-5">
+                        At C. Balthazar, we are dedicated to providing a unique literary experience for book enthusiasts. Our
+                        bookstore
+                        showcases rare first editions, signed classics, and forgotten works, creating a sanctuary of literary
+                        treasures. We take
+                        pride in our curated themed sections, such as the 'Lost Voices' corner, where hidden masterpieces await
+                        discovery.
+                    </p>
+                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Shop books</button>
+                </div>
+            </div>
 
-        </div>    
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 bg-warning p-5"></div>
+            <!-- <div class="z-1 container-fluid p-5 d-lg-none d-block">
+                <div class="bg-light p-5 rounded-4">
+                    <p class="gloock h4">Our Mission</p>
+                    <h1 class="gloock some-h1 fw-bold mb-5">Inspiring <br> Book <br> Lovers</h1>
+                    <p class="mt-5">
+                        At C. Balthazar, we are dedicated to providing a unique literary experience for book enthusiasts. Our
+                        bookstore
+                        showcases rare first editions, signed classics, and forgotten works, creating a sanctuary of literary
+                        treasures. We take
+                        pride in our curated themed sections, such as the 'Lost Voices' corner, where hidden masterpieces await
+                        discovery.
+                    </p>
+                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Shop books</button>
+                </div>
             </div>
         </div> -->
     </section>

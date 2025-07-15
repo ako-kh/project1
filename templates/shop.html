@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% block body %}
+    
+    <p class="ps-3"><a class="link-dark text-decoration-none" href="{{ url_for('index') }}">Home</a> > All products</p>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-2 d-lg-block d-none">
+                <p class="f-color gloock fw-bold h4">Browse by</p>
+                <hr>
+                <p class="f-color fw-lighter h5 text-decoration-underline mb-5">All products</p>
+
+                <p class="f-color gloock fw-bold h4">Filter by</p>
+                <hr>
+                <div class="d-flex align-items-center">
+                    <p class="f-color m-0">Price</p>
+                    <button class="btn ms-auto" type="button">+</button>
+                </div>
+                <hr>
+                <div class="d-flex align-items-center">
+                    <p class="f-color m-0">Color</p>
+                    <button class="btn ms-auto" type="button">+</button>
+                </div>
+                <hr><div class="d-flex align-items-center">
+                    <p class="f-color m-0">Size</p>
+                    <button class="btn ms-auto" type="button">+</button>
+                </div>
+                <hr>
+            </div>
+
+            <div class="col-lg-10 col-12">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-8">
+                            <h1 class="f-color gloock">All Products</h1>
+                            <p class="f-color d-md-block d-none">
+                                This is your category description. It’s a great place to tell customers what this category is about, connect with
+                                your audience and draw attention to your products.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row"> 
+                        <div class="col">
+                            <p class="f-color ">4 products</p>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="f-color nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sorte by:
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Recomended</a></li>
+                                        <li><a class="dropdown-item" href="#">Newest</a></li>
+                                        <li><a class="dropdown-item" href="#">Price (low to high)</a></li>
+                                        <li><a class="dropdown-item" href="#">Price (high to low)</a></li>
+                                        <li><a class="dropdown-item" href="#">Name A-Z</a></li>
+                                        <li><a class="dropdown-item" href="#">Name Z-A</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-3 col-12">
+                            <div>
+                                <img class="mb-2 w-100" src="{{ url_for('static', filename='images/final_countdown.jpg')}}"
+                                    alt="Final countdown">
+                                <div class="card-body">
+                                    <p class="f-color fw-lighter my-1">Final countdown</p>
+                                    <p class="f-color fw-lighter">85$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div>
+                                <img class="mb-2 w-100" src="{{ url_for('static', filename='images/beyond_the_fog.jpg')}}"
+                                    alt="Beyond The Fog">
+                                <div class="card-body">
+                                    <p class="f-color fw-lighter my-1">Beyond The Fog</p>
+                                    <p class="f-color fw-lighter">80$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div>
+                                <img class="mb-2 w-100" src="{{ url_for('static', filename='images/diannas_vision.jpg')}}"
+                                    alt="Dianna's vision">
+                                <div class="card-body">
+                                    <p class="f-color fw-lighter my-1">Dianna's vision</p>
+                                    <p class="f-color fw-lighter">90$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div>
+                                <img class="mb-2 w-100" src="{{ url_for('static', filename='images/the_real_story.jpg')}}"
+                                    alt="The Real Story">
+                                <div class="card-body">
+                                    <p class="f-color fw-lighter my-1">The Real Story</p>
+                                    <p class="f-color fw-lighter">85$</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+{% endblock %}
