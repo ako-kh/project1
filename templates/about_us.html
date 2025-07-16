@@ -25,26 +25,11 @@
                         pride in our curated themed sections, such as the 'Lost Voices' corner, where hidden masterpieces await
                         discovery.
                     </p>
-                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Shop books</button>
+                    <form action="{{ url_for('shop') }}" method="get">
+                        <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="submit">Shop books</button>
+                    </form>
                 </div>
             </div>
-
-            <!-- <div class="z-1 container-fluid p-5 d-lg-none d-block">
-                <div class="bg-light p-5 rounded-4">
-                    <p class="gloock h4">Our Mission</p>
-                    <h1 class="gloock some-h1 fw-bold mb-5">Inspiring <br> Book <br> Lovers</h1>
-                    <p class="mt-5">
-                        At C. Balthazar, we are dedicated to providing a unique literary experience for book enthusiasts. Our
-                        bookstore
-                        showcases rare first editions, signed classics, and forgotten works, creating a sanctuary of literary
-                        treasures. We take
-                        pride in our curated themed sections, such as the 'Lost Voices' corner, where hidden masterpieces await
-                        discovery.
-                    </p>
-                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Shop books</button>
-                </div>
-            </div>
-        </div> -->
     </section>
 
 {% endblock %}

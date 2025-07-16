@@ -67,14 +67,6 @@ nav{
     box-shadow: none;
     border-color: inherit;
 }
-.custom-btn{
-    width: 250px;
-    transition: 0.3s;
-}
-.custom-btn:hover{
-    background-color: #2e0f13;
-    color: white;
-}
 .form-style button{
     background-color: #2e0f13;
     color: white;

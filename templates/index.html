@@ -13,7 +13,9 @@
             </div>
             <div class="col-lg-4 col-12">
                  <div class="color_bg_gray p-5 rounded-4 w-100 h-100 d-flex justify-content-center align-items-center">
-                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Shop books</button>
+                    <form action="{{ url_for('shop') }}" method="get">
+                        <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="submit">Shop books</button>
+                    </form>
                  </div>
             </div>
         </div>
@@ -150,7 +152,9 @@
 
             <div class="row mb-lg-5 mb-0 justify-content-center">
                 <div class="col-auto">
-                    <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="button">Discover more</button>
+                    <form action="{{ url_for('about_us') }}" method="get">
+                        <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="submit">Discover more</button>
+                    </form>    
                 </div>
             </div>
         </div>
