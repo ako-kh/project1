@@ -8,16 +8,16 @@
         </div>
     </section>
 
-    <section class="px-4">
+    <section class="px-4 d-none d-lg-block">
         <div class="position-relative">
             <video class="z-0 rounded-4 w-100" src="{{ url_for('static', filename='images/reading.mp4')}}" autoplay muted loop
                 id=bgvideo></video>
         
-            <div class="z-1 container position-absolute start-0 top-0 p-5">
+            <div class="z-1 container position-absolute start-0 top-0 p-5 w-50">
                 <div class="bg-light p-5 rounded-4">
                     <p class="f-color gloock h4">Our Mission</p>
                     <h1 class="f-color gloock fw-bold mb-5">Inspiring <br> Book <br> Lovers</h1>
-                    <p class="f-color mt-5">
+                    <p class="f-color">
                         At C. Balthazar, we are dedicated to providing a unique literary experience for book enthusiasts. Our
                         bookstore
                         showcases rare first editions, signed classics, and forgotten works, creating a sanctuary of literary
@@ -31,5 +31,21 @@
                 </div>
             </div>
     </section>
+
+    <div class="bg-light p-5 rounded-4 d-block d-lg-none">
+        <p class="f-color gloock h4">Our Mission</p>
+        <h1 class="f-color gloock fw-bold w-100">Inspiring Book <br> Lovers</h1>
+        <p class="f-color mt-3 mb-5">
+            At C. Balthazar, we are dedicated to providing a unique literary experience for book enthusiasts. Our
+            bookstore
+            showcases rare first editions, signed classics, and forgotten works, creating a sanctuary of literary
+            treasures. We take
+            pride in our curated themed sections, such as the 'Lost Voices' corner, where hidden masterpieces await
+            discovery.
+        </p>
+        <form action="{{ url_for('shop') }}" method="get">
+            <button class="btn btn-warning rounded-5 px-5 custom-btn border-0" type="submit">Shop books</button>
+        </form>
+    </div>
 
 {% endblock %}
